@@ -17,7 +17,7 @@ if(int(startHour)<9 and int(startMin)<40):
 else:
     byebyetime = "18:30:00"
 
-if(datetime.datetime.now().weekday()==4)
+if(datetime.datetime.now().weekday()==4):
     byebyetime = "16:30:00"
 nowTime =  time.strftime('%H:%M:%S',time.localtime(time.time()))
 
