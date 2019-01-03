@@ -1,5 +1,5 @@
 #!/usr/bin/python
-''' 注释
+'''
 Filename: "shutdown.py"
 author:   "knva"
 date  :   "2017-03-16"
@@ -31,3 +31,8 @@ str_cmd = "shutdown -s -t %s"%(shutdownsec)
 print(str_cmd)
 os.system(cancelCmd)
 os.system(str_cmd)
+
+for k in range(shutdownsec, 0, -1):
+    print ("距离下班还有{0}秒...".format(k))
+    time.sleep(1)
+    os.system("cls")
